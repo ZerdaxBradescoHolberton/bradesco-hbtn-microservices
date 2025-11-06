@@ -1,0 +1,12 @@
+O que é microsserviços ?
+Visão geral da arquitetura Monolítica e de Microsserviços
+Os benefícios da arquitetura de microsserviços - Cite 3 exemplos
+Quais são os tipos de comunicação entre os microsserviços ?
+
+A arquitetura de microsserviços consiste em um sistema dividido entre serviços independentes, com baixo acoplamento e alta coesão, que interagem entre si através de comunicação síncrona (API Rest, CQRS, etc.) ou assíncrona (mensageria, pub/sub, etc.).
+O padrão monolítico contrasta com o de microsserviços por implementar em uma única aplicação todas as funcionalidades do sistema, geralmente utilizando um único tipo de banco de dados, mantendo todos os componentes da aplicação acoplados e interdependentes. O padrão monolítico é geralmente mais rápido de desenvolver, mas conforme escala, pode ser mais difícil de manter, bem como tem uma baixa flexibilidade quanto ao uso de diferentes tecnologias ou à migração destas. Microsserviços, por sua vez, com seu baixo acoplamento, permitem ao sistema como um todo uma maior resiliência, considerando que a indisponibilidade de um serviço não necessariamente impõe indidsponibilidade de toda a aplicação, e permite o uso e interação de diferentes tecnologias dentro do sistema (bancos de dados, comunicação, ambientes cloud e on premise, etc.). A manutenção de cada serviço também é independente, não necessitando o deploy de toda a aplicação, e o mesmo se aplicando aos testes, que se resumem ao domínio do serviço e não a todo o escopo da aplicação.
+Portanto, entre os benefícios da arquitetura de microsserviços, podemos destacar:
+    1. A resiliência do sistema, onde a indisponibilidade de um serviço não necessariamente se aplica a toda a aplicação;
+    2. A liberdade na escolha de diferentes tecnologias para cada serviço;
+    3. A possibilidade de usar equipes pequenas e especializadas, que conseguem fazer entregas de desenvolvimento e correções mais rápidas, e dominam geralmente todo o serviço em questão.
+Os tipos de comunicação entre os microsserviços são síncrona (Rest, CQRS) e assíncrona (mensageria, eventos).
